@@ -1,0 +1,363 @@
+<html>
+<head>
+<title>SKYGAMES</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1257">
+<script language="JavaScript">
+<!--
+function FP_swapImgRestore() {//v1.0
+ var doc=document,i; if(doc.$imgSwaps) { for(i=0;i<doc.$imgSwaps.length;i++) {
+  var elm=doc.$imgSwaps[i]; if(elm) { elm.src=elm.$src; elm.$src=null; } } 
+  doc.$imgSwaps=null; }
+}
+
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+</head>
+<body bgcolor="#333333" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onload="FP_preloadImgs(/*url*/'images/rollover/images/rollover_01.gif', /*url*/'images/rollover/images/rollover_02.gif', /*url*/'images/rollover/images/rollover_03.gif', /*url*/'images/rollover/images/rollover_04.gif', /*url*/'images/rollover/images/rollover_05.gif', /*url*/'images/rollover/images/rollover_06.gif')">
+<!-- ImageReady Slices (SKYGAMES.psd) -->
+<div align="center">
+<table id="Table_01" width="837" height="510" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+			<img src="images/image_01.gif" width="11" height="1" alt=""></td>
+		<td colspan="2" rowspan="2">
+			<img src="images/image_02.gif" width="131" height="47" alt="" id="img1" onmouseout="FP_swapImgRestore()" onmouseover="FP_swapImg(1,1,/*id*/'img1',/*url*/'images/rollover/images/rollover_01.gif')"></td>
+		<td colspan="4" rowspan="2">
+			<img src="images/image_03.gif" width="139" height="47" alt="" id="img2" onmouseout="FP_swapImgRestore()" onmouseover="FP_swapImg(1,1,/*id*/'img2',/*url*/'images/rollover/images/rollover_02.gif')"></td>
+		<td rowspan="2">
+			<img src="images/image_04.gif" width="140" height="47" alt="" id="img3" onmouseout="FP_swapImgRestore()" onmouseover="FP_swapImg(1,1,/*id*/'img3',/*url*/'images/rollover/images/rollover_03.gif')"></td>
+		<td rowspan="2">
+			<img src="images/image_05.gif" width="142" height="47" alt="" id="img4" onmouseout="FP_swapImgRestore()" onmouseover="FP_swapImg(1,1,/*id*/'img4',/*url*/'images/rollover/images/rollover_04.gif')"></td>
+		<td colspan="6" rowspan="2">
+			<img src="images/image_06.gif" width="137" height="47" alt="" id="img5" onmouseout="FP_swapImgRestore()" onmouseover="FP_swapImg(1,1,/*id*/'img5',/*url*/'images/rollover/images/rollover_05.gif')"></td>
+		<td colspan="5" rowspan="2">
+			<img src="images/image_07.gif" width="126" height="47" alt="" id="img6" onmouseout="FP_swapImgRestore()" onmouseover="FP_swapImg(1,1,/*id*/'img6',/*url*/'images/rollover/images/rollover_06.gif')"></td>
+		<td rowspan="15" background="images/image_08.gif">
+			&nbsp;</td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="1" alt=""></td>
+	</tr>
+	<tr>
+		<td rowspan="14" background="images/image_09.gif">
+			&nbsp;</td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="46" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="5">
+			<img src="images/image_10.gif" width="218" height="12" alt=""></td>
+		<td colspan="4" rowspan="8" background="images/image_11.gif">
+			&nbsp;</td>
+		<td colspan="9" rowspan="2">
+			<img src="images/image_12.gif" width="203" height="45" alt=""></td>
+		<td rowspan="10">
+			<img src="images/image_13.gif" width="1" height="208" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="12" alt=""></td>
+	</tr>
+	<tr>
+		<td rowspan="9">
+			<img src="images/image_14.gif" width="9" height="196" alt=""></td>
+		<td colspan="3" rowspan="8">
+			<img src="images/SKYGAMES_16.gif" width="194" height="183" alt=""></td>
+		<td rowspan="9">
+			<img src="images/image_16.gif" width="15" height="196" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="33" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="3" rowspan="5">
+			<img src="images/image_17.gif" width="39" height="99" alt=""></td>
+		<td colspan="5">
+			<img src="images/image_18.gif" width="158" height="21" alt=""></td>
+		<td rowspan="5">
+			<img src="images/image_19.gif" width="6" height="99" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="21" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="5">
+			<img src="images/image_20.gif" width="158" height="16" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="16" alt=""></td>
+	</tr>
+	<tr>
+		<td rowspan="3">
+			<img src="images/image_21.gif" width="1" height="62" alt=""></td>
+		<td colspan="3">
+			<img src="images/image_22.gif" width="156" height="23" alt=""></td>
+		<td rowspan="2">
+			<img src="images/image_23.gif" width="1" height="37" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="23" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="3">
+			<img src="images/image_24.gif" width="156" height="14" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="14" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<img src="images/image_25.gif" width="58" height="25" alt=""></td>
+		<td colspan="2">
+			<img src="images/image_26.gif" width="99" height="25" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="25" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="images/image_27.gif" width="13" height="11" alt=""></td>
+		<td colspan="8" rowspan="3" background="images/image_28.gif">
+			&nbsp;</td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="11" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="5" rowspan="2">
+			<img src="images/image_29.gif" width="406" height="53" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="40" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="3">
+			<img src="images/image_30.gif" width="194" height="13" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="13" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="3" rowspan="3" bgcolor="#D05024" valign="top">
+			<div align="center">
+				<table border="0" width="100%" id="table1" cellspacing="0" cellpadding="0">
+					<tr>
+						<td>
+			<img src="images/image_31.gif" width="175" height="9" alt=""></td>
+					</tr>
+					<tr>
+						<td background="images/image_35.gif">
+						<div align="center">
+							<table border="0" width="88%" id="table4" cellspacing="0" cellpadding="0">
+								<tr>
+									<td>&nbsp;<p>&nbsp;</p>
+									<p>&nbsp;</p>
+									<p>&nbsp;</td>
+								</tr>
+							</table>
+						</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+			<img src="images/image_38.gif" width="175" height="10" alt=""><br>
+&nbsp;</td>
+					</tr>
+				</table>
+				<div align="center">
+					<table border="0" width="100%" id="table17" cellspacing="0" cellpadding="0">
+						<tr>
+							<td>
+			<img src="images/image_31.gif" width="175" height="9" alt=""></td>
+						</tr>
+						<tr>
+							<td background="images/image_35.gif">
+							<div align="center">
+								<table border="0" width="88%" id="table18" cellspacing="0" cellpadding="0">
+									<tr>
+										<td>&nbsp;<p>&nbsp;</p>
+										<p>&nbsp;</p>
+										<p>&nbsp;</p>
+										<p>&nbsp;</p>
+										<p>&nbsp;</p>
+										<p>&nbsp;</p>
+										<p>&nbsp;</td>
+									</tr>
+								</table>
+							</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+			<img src="images/image_38.gif" width="175" height="10" alt=""></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</td>
+		<td colspan="8" rowspan="3" bgcolor="#D05024" valign="top">
+			<div align="center">
+				<table border="0" width="100%" id="table2" cellspacing="0" cellpadding="0">
+					<tr>
+						<td>
+			<img src="images/image_32.gif" width="465" height="9" alt=""></td>
+					</tr>
+					<tr>
+						<td background="images/image_36.gif">
+						<div align="center">
+							<table border="0" width="96%" id="table6" cellspacing="0" cellpadding="0">
+								<tr>
+									<td>&nbsp;<p>&nbsp;</p>
+									<p>&nbsp;</p>
+									<p>&nbsp;</p>
+									<p>&nbsp;</p>
+									<p>&nbsp;</p>
+									<p>&nbsp;</p>
+									<p>&nbsp;</p>
+									<p>&nbsp;</p>
+									<p>&nbsp;</p>
+									<p>&nbsp;</p>
+									<p>&nbsp;</p>
+									<p>&nbsp;</p>
+									<p>&nbsp;</p>
+									<p>&nbsp;</p>
+									<p>&nbsp;</p>
+									<p>&nbsp;</td>
+								</tr>
+							</table>
+						</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+			<img src="images/image_39.gif" width="465" height="10" alt=""></td>
+					</tr>
+				</table>
+			</div>
+		</td>
+		<td colspan="7" rowspan="3" bgcolor="#D05024" valign="top">
+			<div align="center">
+				<table border="0" width="100%" id="table3" cellspacing="0" cellpadding="0">
+					<tr>
+						<td>
+			<img src="images/image_33.gif" width="174" height="9" alt=""></td>
+					</tr>
+					<tr>
+						<td background="images/image_37.gif">
+						<div align="center">
+							<table border="0" width="88%" id="table5" cellspacing="0" cellpadding="0">
+								<tr>
+									<td>&nbsp;<p>&nbsp;</p>
+									<p>&nbsp;</p>
+									<p>&nbsp;</p>
+									<p>&nbsp;</td>
+								</tr>
+							</table>
+						</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+			<img src="images/image_40.gif" width="174" height="10" alt=""><br>
+&nbsp;<div align="center">
+							<table border="0" width="100%" id="table9" cellspacing="0" cellpadding="0">
+								<tr>
+									<td>
+			<img src="images/image_33.gif" width="174" height="9" alt=""></td>
+								</tr>
+								<tr>
+									<td background="images/image_37.gif">
+									<div align="center">
+										<table border="0" width="88%" id="table10" cellspacing="0" cellpadding="0">
+											<tr>
+												<td>&nbsp;<p>&nbsp;</p>
+												<p>&nbsp;</p>
+												<p>&nbsp;</p>
+												<p>&nbsp;</td>
+											</tr>
+										</table>
+									</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+			<img src="images/image_40.gif" width="174" height="10" alt=""></td>
+								</tr>
+							</table>
+						</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</td>
+		<td rowspan="3" bgcolor="#D05024">
+			<img src="images/image_34.gif" width="1" height="254" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="9" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="images/spacer.gif" width="1" height="235" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="images/spacer.gif" width="1" height="10" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="images/spacer.gif" width="11" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="9" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="122" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="44" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="28" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="15" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="52" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="140" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="142" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="59" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="13" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="16" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="10" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="38" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="20" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="98" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="6" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="10" height="1" alt=""></td>
+		<td></td>
+	</tr>
+</table>
+</div>
+<!-- End ImageReady Slices -->
+</body>
+</html>
