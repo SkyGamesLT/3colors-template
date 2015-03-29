@@ -1,0 +1,103 @@
+					<!-- ADMIN NAVIGATION BAR START -->
+					<div id="navbar">
+        				<table cellspacing="0" cellpadding="0" id="menu1" class="NavMenu">
+        					<tr>
+	    						<td>
+                				<a class="button" href="javascript:void(0)"><{$smarty.const._AD_NAV_ACTIONS}></a>
+                					<div class="section">
+		 									<a class="item" href="<{$xoops_url}>/admin.php"><{$smarty.const._AD_NAV_CPHOME}></a>
+                    					<a class="item" href="<{$xoops_url}>/admin.php?xoopsorgnews=1"><{$smarty.const._AD_NAV_XOOPSORG}></a>
+											<a class="item" href="<{$xoops_url}>/"><{$smarty.const._AD_NAV_SITEHOME}></a>
+		    								<a class="item" href="<{$xoops_url}>/user.php?op=logout"><{$smarty.const._AD_NAV_LOGOUT}></a>
+                					</div>
+            				</td>
+            				<{if isset($systemmenu.links.3)}>
+                				<td>
+                    				<a class="button" href="javascript:void(0)"><{$smarty.const._AD_NAV_PREFS}></a>
+                					<div class="section">
+                                        <{foreach item=module from=$systemmenu.links.3.sublinks}>
+                                            <a class="item" href="javascript:void(0)"><{$module.name}><img class="arrow" src="<{$xoops_imageurl}>images/menuarrow1.gif" width="4" height="7" alt="" /></a>
+                                            <div class="section">
+                                                <{foreach item=cat from=$module.cats}>
+                                                    <a class="item" href='<{$cat.link}>'><{$cat.title}></a>
+                                                <{/foreach}>
+                                            </div>
+                    					<{/foreach}>
+                					</div>
+                				</td>
+            				<{/if}>
+            				<{if isset($adminmenu)}>
+                				<td>
+                    				<a class="button" href="javascript:void(0)"><{$smarty.const._AD_NAV_MODULES}></a>
+                    					<div class="section">
+    											<{foreach item=module from=$adminmenu key=counter}>
+    												<a class="item" href="javascript:void(0)"><{$module.name}><img class="arrow" src="<{$xoops_imageurl}>images/menuarrow1.gif" width="4" height="7" alt="" /></a>
+    										<div class="section">
+    											<{foreach item=menuitem from=$module.links}>
+                            				<a class="item" href="<{$menuitem.link}>"><{$menuitem.title}></a>
+    											<{/foreach}>
+    										</div>
+    										<{/foreach}>
+    										<{if isset($systemmenu.links.4)}>
+        										<hr />
+        									    <a class="item" href="<{$systemmenu.links.4.link}>"><{$smarty.const._AD_NAV_MODADMIN}></a>
+    									    <{/if}>
+                    					</div>
+                				</td>
+            				<{/if}>
+            				<{if isset($systemmenu.links.5)}>
+                				<td>
+                    				<a class="button" href="javascript:void(0)"><{$smarty.const._AD_NAV_BLOCKS}></a>
+                       				<div class="section">
+    											<a class="item" href='<{$xoops_url}>/modules/system/admin.php?fct=blocksadmin&amp;selmod=-1&amp;selgrp=2&amp;selvis=2'><{$smarty.const._AD_NAV_BLALL}></a>
+                    				</div>
+                				</td>
+            				<{/if}>
+            				<{if isset($systemmenu.links.8) || isset($systemmenu.links.11) || isset($systemmenu.links.1)}>
+                				<td>
+                    				<a class="button" href="javascript:void(0)"><{$smarty.const._AD_NAV_USERS}></a>
+                       				<div class="section">
+                       				     <{if isset($systemmenu.links.7)}>
+                       				         <a class="item" href='<{$systemmenu.links.7.link}>'><{$systemmenu.links.7.title}></a>
+                       				     <{/if}>
+                       				     <{if isset($systemmenu.links.8)}>
+                       				         <a class="item" href='<{$systemmenu.links.8.link}>'><{$systemmenu.links.8.title}></a>
+                       				     <{/if}>
+                       				     <{if isset($systemmenu.links.11)}>
+                       				         <a class="item" href='<{$systemmenu.links.11.link}>'><{$systemmenu.links.11.title}></a>
+                       				     <{/if}>
+                       				     <{if isset($systemmenu.links.1)}>
+                       				         <a class="item" href='<{$systemmenu.links.1.link}>'><{$systemmenu.links.1.title}></a>
+                       				     <{/if}>
+                   	   			    </div>
+                				</td>
+            				<{/if}>
+	    					<td>
+                				<a class="button" href="javascript:void(0)"><{$smarty.const._AD_NAV_MISC}></a>
+                   				<div class="section">
+                   				    <{if isset($systemmenu.links.13)}>
+                   				         <a class="item" href='<{$systemmenu.links.13.link}>'><{$systemmenu.links.13.title}></a>
+                   				     <{/if}>
+                   				     <{if isset($systemmenu.links.1)}>
+                   				         <a class="item" href='<{$systemmenu.links.9.link}>'><{$systemmenu.links.9.title}></a>
+                   				     <{/if}>
+                   				     <{if isset($systemmenu.links.12)}>
+                   				         <a class="item" href='<{$systemmenu.links.12.link}>'><{$systemmenu.links.12.title}></a>
+                   				     <{/if}>
+                   				     <{if isset($systemmenu.links.10)}>
+                   				         <a class="item" href='<{$systemmenu.links.10.link}>'><{$systemmenu.links.10.title}></a>
+                   				     <{/if}>
+                   				     <{if isset($systemmenu.links.15)}>
+                   				         <a class="item" href='<{$systemmenu.links.15.link}>'><{$systemmenu.links.15.title}></a>
+                   				     <{/if}>
+                   				     <{if isset($systemmenu.links.14)}>
+                   				         <a class="item" href='<{$systemmenu.links.14.link}>'><{$systemmenu.links.14.title}></a>
+                   				     <{/if}>
+               	   			  </div>
+            				</td>
+	    						<td id="search">
+                				<!-- <{$xoops_uname}>@<{$xoops_sitename}> -->
+            				</td>
+        					</tr>
+        				</table>
+    				</div>

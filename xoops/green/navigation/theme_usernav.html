@@ -1,0 +1,35 @@
+					<!-- USER NAVIGATION BAR START -->
+					<div id="navbar">
+        				<table cellspacing="0" cellpadding="0" id="menu1" class="NavMenu">
+        					<tr>
+								<{if $xoops_isuser == 1}>
+								    <td>
+    								    <a class="button" href="javascript:void(0)"><{$smarty.const._MA_NAV_ACTIONS}></a>
+    								    <div class="section">
+        									<a class="item" href="<{$xoops_url}>/user.php"><{$smarty.const._MA_NAV_VIEWACCOUNT}></a>
+                                            <a class="item" href="<{$xoops_url}>/edituser.php"><{$smarty.const._MA_NAV_EDITACCOUNT}></a>
+                                            <a class="item" href="<{$xoops_url}>/notifications.php"><{$smarty.const._MA_NAV_NOTIFICATIONS}></a>
+                                            <a class="item" href="<{$xoops_url}>/user.php?op=logout"><{$smarty.const._MA_NAV_LOGOUT}></a>
+                                            <{if $xoops_isadmin}>
+                                                <a class="item" href="<{$xoops_url}>/admin.php"><{$smarty.const._MA_NAV_ADMINISTRATION}></a>
+                                            <{/if}>
+                                        </div>
+                                    </td>
+								<{else}>
+									<td id="date"> 
+										<{$smarty.now|date_format:"%A, %e %B %Y"}>
+									</td>
+								<{/if}>
+									<td id="search">
+										<form style="margin: 0px;" action="<{$xoops_url}>/search.php" method="get">
+  											<input type="text" name="query" size="14" />
+											<input type="hidden" name="action" value="results" />
+											<input class="formButton" type="submit" value="<{$smarty.const._SEARCH}>" />
+  											<{if $smarty.const.modid > 1}>
+    										<input type="hidden" name="mids[]" value="<{$smarty.const.modid}>" />
+  											<{/if}>
+										</form>
+									</td>
+        					</tr>
+        				</table>
+    				</div>
