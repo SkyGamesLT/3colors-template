@@ -1,4 +1,4 @@
-[![license](https://img.shields.io/github/license/SkyCommunity/orfi-template.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![license](https://img.shields.io/github/license/SkyGamesLT/3colors-template.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 
 # 3colors template
 
